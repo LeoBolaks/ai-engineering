@@ -33,6 +33,7 @@
 int main()
 {
 	srand(time(nullptr));
+	rand();
 	Game game;
 	game.run();
 		

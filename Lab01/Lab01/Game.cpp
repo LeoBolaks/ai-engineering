@@ -144,6 +144,8 @@ void Game::update(sf::Time t_deltaTime)
 {
 	checkKeyboardState();
 	checkMouseState();
+	player.update();
+	npc.update();
 	if (m_DELETEexitGame)
 	{
 		m_window.close();
@@ -155,7 +157,10 @@ void Game::update(sf::Time t_deltaTime)
 /// </summary>
 void Game::render()
 {	
+	m_window.clear(sf::Color::Black);
+	m_window.draw(yavinBackground);
 	player.draw(m_window);
+	npc.draw(m_window);
 	m_window.display();
 }
 
@@ -180,6 +185,12 @@ void Game::setupSprites()
 	//
 	//m_DELETElogoSprite.setTexture(m_DELETElogoTexture,true);// to reset the dimensions of texture
 	//m_DELETElogoSprite.setPosition(sf::Vector2f{ 100.0f, 50.0f });
+	if (!yavinTexture.loadFromFile("ASSETS\\IMAGES\\YAVIN.jpg"))
+	{
+		std::cout << "Problem loading background" << std::endl;
+	}
+	yavinBackground.setTexture(yavinTexture, true);
+	yavinBackground.setPosition({ 0.0f,0.0f });
 }
 
 /// <summary>

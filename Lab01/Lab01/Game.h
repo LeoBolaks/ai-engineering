@@ -20,6 +20,7 @@
 #include <SFML/Audio.hpp>
 
 #include "Player.h"
+#include "NPC.h"
 
 const sf::Color NICE_BLUE{ 16, 122,176,255 }; // const colour
 
@@ -46,10 +47,13 @@ private:
 
 	
 	sf::RenderWindow m_window; // main SFML window
+	sf::Texture yavinTexture;
+	sf::Sprite yavinBackground{ yavinTexture };
 	
 	bool m_DELETEexitGame; // control exiting game
 
 	Player player;
+	NPC npc;
 
 };
 

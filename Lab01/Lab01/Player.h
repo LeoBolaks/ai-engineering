@@ -21,6 +21,9 @@ private:
 	sf::Vector2f position;
 	sf::Vector2f direction;
 	float randomNum;
-	sf::Angle rotation;
+	sf::Angle rotationDegrees;
+	float rotation;
+
 	float velocity;
+	float turnSpeed;
 };
