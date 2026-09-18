@@ -19,7 +19,7 @@
 /// </summary>
 Game::Game() :
 	m_window{ sf::VideoMode{ sf::Vector2u{1000U, 800U}, 32U }, "SFML Game 3.1" },
-	m_DELETEexitGame{false} //when true game will exit
+	m_DELETEexitGame{ false } //when true game will exit
 {
 	setupTexts(); // load font 
 	setupSprites(); // load texture
@@ -31,8 +31,7 @@ Game::Game() :
 /// so we don't need to free it, but method needs to be here
 /// </summary>
 Game::~Game()
-{
-}
+{}
 
 
 /// <summary>
@@ -43,7 +42,7 @@ Game::~Game()
 /// if updates run slow then don't render frames
 /// </summary>
 void Game::run()
-{	
+{
 	sf::Clock clock;
 	sf::Time timeSinceLastUpdate = sf::Time::Zero;
 	const float fps{ 60.0f };
@@ -67,10 +66,10 @@ void Game::run()
 /// and user :: Don't do game update here
 /// </summary>
 void Game::processEvents()
-{	
-	while ( std::optional newEvent = m_window.pollEvent())
+{
+	while (std::optional newEvent = m_window.pollEvent())
 	{
-		if ( newEvent->is<sf::Event::Closed>()) // close window message 
+		if (newEvent->is<sf::Event::Closed>()) // close window message 
 		{
 			m_DELETEexitGame = true;
 		}
@@ -101,7 +100,7 @@ void Game::processEvents()
 /// </summary>
 /// <param name="t_event">key press event</param>
 void Game::processKeyPress(sf::Event::KeyPressed t_keyPress)
-{	
+{
 	if (sf::Keyboard::Key::Escape == t_keyPress.code)
 	{
 		m_DELETEexitGame = true; // only need one of these, but this is an example of checking events rather than state
@@ -133,7 +132,7 @@ void Game::checkKeyboardState()
 /// </summary>
 void Game::checkMouseState()
 {
-	
+
 }
 
 /// <summary>
@@ -146,6 +145,7 @@ void Game::update(sf::Time t_deltaTime)
 	checkMouseState();
 	player.update();
 	npc.update();
+	npc2.update();
 	if (m_DELETEexitGame)
 	{
 		m_window.close();
@@ -156,11 +156,12 @@ void Game::update(sf::Time t_deltaTime)
 /// draw the frame and then switch buffers
 /// </summary>
 void Game::render()
-{	
+{
 	m_window.clear(sf::Color::Black);
 	m_window.draw(yavinBackground);
 	player.draw(m_window);
 	npc.draw(m_window);
+	npc2.draw(m_window);
 	m_window.display();
 }
 
@@ -198,5 +199,5 @@ void Game::setupSprites()
 /// </summary>
 void Game::setupAudio()
 {
-	
+
 }

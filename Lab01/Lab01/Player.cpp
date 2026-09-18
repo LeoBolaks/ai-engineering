@@ -6,7 +6,7 @@ Player::Player()
 }
 
 void Player::init()
-{	
+{
 	scale = { 0.15f,0.15f };
 	velocity = 0.0f;
 	turnSpeed = 2.5f;
@@ -121,7 +121,7 @@ void Player::update()
 
 }
 
-void Player::draw(sf::RenderWindow &t_window)
+void Player::draw(sf::RenderWindow& t_window)
 {
 	t_window.draw(xWing);
 }

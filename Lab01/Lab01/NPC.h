@@ -3,10 +3,12 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 
+#include "SteeringBehaviour.h"
+
 class NPC
 {
 public:
-	NPC();
+	NPC(SteeringBehaviour* t_behaviour);
 
 	void init();
 
@@ -22,5 +24,7 @@ private:
 	sf::Vector2f direction;
 	float randomNum;
 	sf::Angle rotation;
-	float velocity;
+	sf::Vector2f velocity;
+
+	SteeringBehaviour* behaviour;
 };

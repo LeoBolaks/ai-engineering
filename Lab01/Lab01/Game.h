@@ -21,6 +21,7 @@
 
 #include "Player.h"
 #include "NPC.h"
+#include "Seek.h"
 
 const sf::Color NICE_BLUE{ 16, 122,176,255 }; // const colour
 
@@ -40,23 +41,23 @@ private:
 	void checkMouseState();
 	void update(sf::Time t_deltaTime);
 	void render();
-	
+
 	void setupTexts();
 	void setupSprites();
 	void setupAudio();
 
-	
+
 	sf::RenderWindow m_window; // main SFML window
 	sf::Texture yavinTexture;
 	sf::Sprite yavinBackground{ yavinTexture };
-	
+
 	bool m_DELETEexitGame; // control exiting game
 
 	Player player;
-	NPC npc;
+	NPC npc(Seek);
+	NPC npc2;
 
 };
 
 #pragma warning( pop ) 
 #endif // !GAME_HPP
-

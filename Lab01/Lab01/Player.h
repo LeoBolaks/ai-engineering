@@ -12,7 +12,7 @@ public:
 
 	void update();
 
-	void draw(sf::RenderWindow &t_window);
+	void draw(sf::RenderWindow& t_window);
 
 private:
 	sf::Texture xWingTexture;

@@ -1,14 +1,12 @@
 #include "NPC.h"
 
-NPC::NPC()
+NPC::NPC(SteeringBehaviour* t_behaviour) : behaviour(t_behaviour);
 {
 	init();
 }
-
 void NPC::init()
 {
 	scale = { 0.15f,0.15f };
-	velocity = 10.0f;
 	position = { 600.0f, 400.0f };
 	randomNum = rand() % 360;
 
@@ -33,9 +31,7 @@ void NPC::init()
 
 void NPC::update()
 {
-	position.x += direction.x * velocity;
-	position.y += direction.y * velocity;
-
+	//behaviour->getSteering(position, );
 	tie.setPosition(position);
 
 	if (position.x < -20)
@@ -55,6 +51,7 @@ void NPC::update()
 	{
 		position.y = -10;
 	}
+
 }
 
 void NPC::draw(sf::RenderWindow& t_window)
