@@ -33,29 +33,29 @@ void Player::init()
 	std::cout << "X-Wing Rotation: " << randomNum << std::endl;
 }
 
-void Player::update()
+void Player::update(sf::Time t_deltaTime)
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
 	{
-		turnSpeed -= 0.4f;
-		if (turnSpeed < -3.0f)
+		turnSpeed -= turnAccel * t_deltaTime.asSeconds();
+		if (turnSpeed < -maxTurnSpeed)
 		{
-			turnSpeed = -3.0f;
+			turnSpeed = -maxTurnSpeed;
 		}
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
 	{
-		turnSpeed += 0.4f;
-		if (turnSpeed > 3.0f)
+		turnSpeed += turnAccel * t_deltaTime.asSeconds();
+		if (turnSpeed > maxTurnSpeed)
 		{
-			turnSpeed = 3.0f;
+			turnSpeed = maxTurnSpeed;
 		}
 	}
 	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right) && !sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
 	{
 		if (turnSpeed < 0)
 		{
-			turnSpeed += 0.2f;
+			turnSpeed += turnFriction * t_deltaTime.asSeconds();
 			if (turnSpeed > 0.1)
 			{
 				turnSpeed = 0;
@@ -63,7 +63,7 @@ void Player::update()
 		}
 		if (turnSpeed > 0)
 		{
-			turnSpeed -= 0.2f;
+			turnSpeed -= turnFriction * t_deltaTime.asSeconds();
 			if (turnSpeed < 0.1)
 			{
 				turnSpeed = 0;
@@ -71,19 +71,19 @@ void Player::update()
 		}
 	}
 
-	rotation += turnSpeed;
+	rotation += turnSpeed * t_deltaTime.asSeconds();
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up))
 	{
-		velocity += 0.4f;
-		if (velocity > 15.0f)
+		velocity += velAccel * t_deltaTime.asSeconds();
+		if (velocity > maxVelocity)
 		{
-			velocity = 15.0f;
+			velocity = maxVelocity;
 		}
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down))
 	{
-		velocity -= 0.3f;
+		velocity -= velBrake * t_deltaTime.asSeconds();
 		if (velocity < 0.0f)
 		{
 			velocity = 0.0f;
@@ -96,8 +96,8 @@ void Player::update()
 	rotationDegrees = sf::degrees(rotation + 90.0f);
 	xWing.setRotation(rotationDegrees);
 
-	position.x += direction.x * velocity;
-	position.y += direction.y * velocity;
+	position.x += direction.x * velocity * t_deltaTime.asSeconds();
+	position.y += direction.y * velocity * t_deltaTime.asSeconds();
 
 	if (position.x < -20)
 	{

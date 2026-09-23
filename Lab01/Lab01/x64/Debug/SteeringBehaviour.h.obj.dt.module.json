@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\SteeringBehaviour.obj",
+            "outputs": [
+                "x64\\Debug\\SteeringBehaviour.h.obj.dt.module.json",
+                "x64\\Debug\\SteeringBehaviour.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

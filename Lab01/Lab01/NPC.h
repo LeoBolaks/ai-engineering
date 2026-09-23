@@ -3,16 +3,21 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 
+#include "Player.h"
 #include "SteeringBehaviour.h"
 
 class NPC
 {
 public:
-	NPC(SteeringBehaviour* t_behaviour);
+	NPC(SteeringBehaviour* t_behaviour, float t_speed);
 
 	void init();
 
-	void update();
+	void update(sf::Time t_deltaTime);
+
+	void setPlayer(Player* t_player) { playerTarget = t_player; }
+
+	void setRotationInDir();
 
 	void draw(sf::RenderWindow& t_window);
 
@@ -25,6 +30,8 @@ private:
 	float randomNum;
 	sf::Angle rotation;
 	sf::Vector2f velocity;
+	float speed;
 
-	SteeringBehaviour* behaviour;
+	SteeringBehaviour* behaviour{ nullptr };
+	Player* playerTarget{ nullptr };
 };

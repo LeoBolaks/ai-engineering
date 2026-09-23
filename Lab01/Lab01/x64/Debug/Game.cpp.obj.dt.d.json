@@ -268,7 +268,12 @@
             "c:\\sfml-3.1.0\\include\\sfml\\audio\\soundfilefactory.inl",
             "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\player.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
-            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\npc.h"
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\npc.h",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\steeringbehaviour.h",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\seek.h",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\wander.h",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\arrive.h",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\pursue.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

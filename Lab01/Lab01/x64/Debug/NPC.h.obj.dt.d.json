@@ -245,7 +245,9 @@
             "c:\\sfml-3.1.0\\include\\sfml\\system\\memoryinputstream.hpp",
             "c:\\sfml-3.1.0\\include\\sfml\\system\\sleep.hpp",
             "c:\\sfml-3.1.0\\include\\sfml\\system\\timeoutwithpredicate.hpp",
-            "c:\\sfml-3.1.0\\include\\sfml\\system\\version.hpp"
+            "c:\\sfml-3.1.0\\include\\sfml\\system\\version.hpp",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\player.h",
+            "c:\\users\\cosmo\\onedrive\\desktop\\college\\year 4\\ai-engineering\\lab01\\lab01\\steeringbehaviour.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

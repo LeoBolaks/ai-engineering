@@ -23,6 +23,7 @@ Game::Game() :
 {
 	setupTexts(); // load font 
 	setupSprites(); // load texture
+	setupNPCs();
 	setupAudio(); // load sound
 }
 
@@ -143,9 +144,12 @@ void Game::update(sf::Time t_deltaTime)
 {
 	checkKeyboardState();
 	checkMouseState();
-	player.update();
-	npc.update();
-	npc2.update();
+	player.update(t_deltaTime);
+	npc.update(t_deltaTime);
+	npc2.update(t_deltaTime);
+	npc3.update(t_deltaTime);
+	npc4.update(t_deltaTime);
+	npc5.update(t_deltaTime);
 	if (m_DELETEexitGame)
 	{
 		m_window.close();
@@ -162,6 +166,9 @@ void Game::render()
 	player.draw(m_window);
 	npc.draw(m_window);
 	npc2.draw(m_window);
+	npc3.draw(m_window);
+	npc4.draw(m_window);
+	npc5.draw(m_window);
 	m_window.display();
 }
 
@@ -192,6 +199,15 @@ void Game::setupSprites()
 	}
 	yavinBackground.setTexture(yavinTexture, true);
 	yavinBackground.setPosition({ 0.0f,0.0f });
+}
+
+void Game::setupNPCs()
+{
+	npc.setPlayer(&player);
+	npc2.setPlayer(&player);
+	npc3.setPlayer(&player);
+	npc4.setPlayer(&player);
+	npc5.setPlayer(&player);
 }
 
 /// <summary>

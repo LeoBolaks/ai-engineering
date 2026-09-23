@@ -21,7 +21,11 @@
 
 #include "Player.h"
 #include "NPC.h"
+
 #include "Seek.h"
+#include "Wander.h"
+#include "Arrive.h"
+#include "Pursue.h"
 
 const sf::Color NICE_BLUE{ 16, 122,176,255 }; // const colour
 
@@ -44,6 +48,7 @@ private:
 
 	void setupTexts();
 	void setupSprites();
+	void setupNPCs();
 	void setupAudio();
 
 
@@ -54,8 +59,11 @@ private:
 	bool m_DELETEexitGame; // control exiting game
 
 	Player player;
-	NPC npc(Seek);
-	NPC npc2;
+	NPC npc{ new Seek, 300.0f };
+	NPC npc2{ new Wander, 150.0f };
+	NPC npc3{ new Arrive, 200.0f };
+	NPC npc4{ new Arrive, 150.0f };
+	NPC npc5{ new Pursue, 450.0f };
 
 };
 

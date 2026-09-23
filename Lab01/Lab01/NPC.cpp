@@ -1,6 +1,6 @@
 #include "NPC.h"
 
-NPC::NPC(SteeringBehaviour* t_behaviour) : behaviour(t_behaviour);
+NPC::NPC(SteeringBehaviour* t_behaviour, float t_speed) : behaviour(t_behaviour), speed(t_speed)
 {
 	init();
 }
@@ -18,7 +18,7 @@ void NPC::init()
 	if (!tieTexture.loadFromFile("ASSETS\\IMAGES\\TIE.png"))
 	{
 		// simple error message if previous call fails
-		std::cout << "problem loading X-Wing" << std::endl;
+		std::cout << "problem loading Tie" << std::endl;
 	}
 
 	tie.setTexture(tieTexture, true);// to reset the dimensions of texture
@@ -29,10 +29,19 @@ void NPC::init()
 	std::cout << "Tie Rotation: " << randomNum << std::endl;
 }
 
-void NPC::update()
-{
-	//behaviour->getSteering(position, );
-	tie.setPosition(position);
+void NPC::update(sf::Time t_deltaTime)
+{	
+	if (behaviour != nullptr)
+	{
+		steeringOutput steer = behaviour->getSteering(position, playerTarget->getPosition(), velocity, playerTarget->getVelocityVector(), speed);
+
+		velocity += steer.linear * t_deltaTime.asSeconds();
+
+		position += velocity * t_deltaTime.asSeconds();
+
+	}
+
+	setRotationInDir();
 
 	if (position.x < -20)
 	{
@@ -52,6 +61,15 @@ void NPC::update()
 		position.y = -10;
 	}
 
+	tie.setPosition(position);
+	velocity.x *= 0.97f;
+	velocity.y *= 0.97f;
+}
+
+void NPC::setRotationInDir()
+{
+	rotation = sf::radians(atan2(velocity.y, velocity.x)) + sf::degrees(90.0f);
+	tie.setRotation(rotation);
 }
 
 void NPC::draw(sf::RenderWindow& t_window)

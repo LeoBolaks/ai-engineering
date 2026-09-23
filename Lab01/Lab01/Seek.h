@@ -3,11 +3,14 @@
 
 class Seek : public SteeringBehaviour
 {
-	virtual sf::Vector2f getSteering(sf::Vector2f t_me, sf::Vector2f t_target, float t_maxAcceleration)
+public:
+	virtual steeringOutput getSteering(sf::Vector2f t_me, sf::Vector2f t_target, sf::Vector2f t_velocity, sf::Vector2f t_targetVelocity, float t_maxAcceleration)
 	{
-		steering = t_target - t_me;
-		steering = steering.normalized();
-		steering *= t_speed;
+		steering.linear = t_target - t_me;
+		steering.linear = steering.linear.normalized();
+		steering.linear *= t_maxAcceleration;
+
+		steering.angular = 0;
 
 		return steering;
 	}
