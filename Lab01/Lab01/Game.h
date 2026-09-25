@@ -59,11 +59,15 @@ private:
 	bool m_DELETEexitGame; // control exiting game
 
 	Player player;
-	NPC npc{ new Seek, 300.0f };
-	NPC npc2{ new Wander, 150.0f };
-	NPC npc3{ new Arrive, 200.0f };
-	NPC npc4{ new Arrive, 150.0f };
-	NPC npc5{ new Pursue, 450.0f };
+
+	std::vector<NPC*> allNPCs;
+
+	NPC npcList[5] = {
+	NPC { new Seek, 1, 300.0f, 1},
+	NPC { new Wander, 2, 150.0f, 2},
+	NPC { new Arrive, 3, 200.0f, 3},
+	NPC { new Arrive, 3, 150.0f, 4},
+	NPC { new Pursue, 4, 350.0f, 5} };
 
 };
 
