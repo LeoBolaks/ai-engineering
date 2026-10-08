@@ -8,7 +8,7 @@ class CollisionAvoidance : public SteeringBehaviour
 {
 public:
 
-	void setParameters(NPC* t_me, std::vector<NPC*>* t_npcList)
+	virtual void setParameters(NPC* t_me, std::vector<NPC*>* t_npcList)
 	{
 		character = t_me;
 		targets = t_npcList;

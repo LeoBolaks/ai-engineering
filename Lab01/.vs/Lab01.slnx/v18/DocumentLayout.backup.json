@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\NPC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Seek.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Seek.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\NPC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\CollisionAvoidance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,28 +31,23 @@
       "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\SteeringBehaviour.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\NPC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Swarming.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Swarming.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Flocking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Flocking.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Seek.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Seek.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Arrive.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Arrive.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Wander.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -47,12 +58,12 @@
       "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Pursue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Arrive.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D891C8B-6E34-4A5D-903C-DA5E793A3EFB}|Lab01\\Lab01.vcxproj|solutionrelative:Lab01\\Arrive.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,43 +73,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CollisionAvoidance.h",
-              "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\CollisionAvoidance.h",
-              "RelativeDocumentMoniker": "Lab01\\CollisionAvoidance.h",
-              "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\CollisionAvoidance.h",
-              "RelativeToolTip": "Lab01\\CollisionAvoidance.h",
-              "ViewState": "AgIAAC0AAAAAAAAAAADwv1UAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Swarming.h",
+              "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Swarming.h",
+              "RelativeDocumentMoniker": "Lab01\\Swarming.h",
+              "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Swarming.h",
+              "RelativeToolTip": "Lab01\\Swarming.h",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-24T19:03:47.434Z",
+              "WhenOpened": "2026-10-08T20:10:45.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "Flocking.h",
+              "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Flocking.h",
+              "RelativeDocumentMoniker": "Lab01\\Flocking.h",
+              "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Flocking.h",
+              "RelativeToolTip": "Lab01\\Flocking.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-08T19:27:02.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "NPC.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.h",
               "RelativeDocumentMoniker": "Lab01\\NPC.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.h",
               "RelativeToolTip": "Lab01\\NPC.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-12T12:57:57.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Seek.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Seek.h",
               "RelativeDocumentMoniker": "Lab01\\Seek.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Seek.h",
               "RelativeToolTip": "Lab01\\Seek.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-23T17:48:48.15Z",
               "EditorCaption": ""
@@ -106,96 +130,120 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NPC.cpp",
-              "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.cpp",
-              "RelativeDocumentMoniker": "Lab01\\NPC.cpp",
-              "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.cpp",
-              "RelativeToolTip": "Lab01\\NPC.cpp",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv1MAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-12T12:58:34.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.h",
               "RelativeDocumentMoniker": "Lab01\\Game.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.h",
               "RelativeToolTip": "Lab01\\Game.h",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAEEAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAEAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-11T10:27:06.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.cpp",
               "RelativeDocumentMoniker": "Lab01\\Game.cpp",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Game.cpp",
               "RelativeToolTip": "Lab01\\Game.cpp",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAqwOQAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAwOUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-11T10:25:41.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CollisionAvoidance.h",
+              "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\CollisionAvoidance.h",
+              "RelativeDocumentMoniker": "Lab01\\CollisionAvoidance.h",
+              "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\CollisionAvoidance.h",
+              "RelativeToolTip": "Lab01\\CollisionAvoidance.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-24T19:03:47.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\vector",
+              "ViewState": "AgIAAFYHAAAAAAAAAAASwGsHAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-08T19:53:31.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "NPC.cpp",
+              "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.cpp",
+              "RelativeDocumentMoniker": "Lab01\\NPC.cpp",
+              "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\NPC.cpp",
+              "RelativeToolTip": "Lab01\\NPC.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-12T12:58:34.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SteeringBehaviour.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\SteeringBehaviour.h",
               "RelativeDocumentMoniker": "Lab01\\SteeringBehaviour.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\SteeringBehaviour.h",
               "RelativeToolTip": "Lab01\\SteeringBehaviour.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-23T17:48:37.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Arrive.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Arrive.h",
               "RelativeDocumentMoniker": "Lab01\\Arrive.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Arrive.h",
               "RelativeToolTip": "Lab01\\Arrive.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-23T20:36:51.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T20:36:51.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Pursue.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Pursue.h",
               "RelativeDocumentMoniker": "Lab01\\Pursue.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Pursue.h",
               "RelativeToolTip": "Lab01\\Pursue.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-23T21:04:08.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Wander.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Wander.h",
               "RelativeDocumentMoniker": "Lab01\\Wander.h",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Wander.h",
               "RelativeToolTip": "Lab01\\Wander.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-23T20:09:56.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T20:09:56.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Player.h",
               "RelativeDocumentMoniker": "Lab01\\Player.h",
@@ -207,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\Player.cpp",
               "RelativeDocumentMoniker": "Lab01\\Player.cpp",
@@ -215,20 +263,20 @@
               "RelativeToolTip": "Lab01\\Player.cpp",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAFQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-11T10:28:47.395Z"
+              "WhenOpened": "2026-09-11T10:28:47.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\main.cpp",
               "RelativeDocumentMoniker": "Lab01\\main.cpp",
               "ToolTip": "C:\\Users\\Cosmo\\OneDrive\\Desktop\\College\\Year 4\\ai-engineering\\Lab01\\Lab01\\main.cpp",
               "RelativeToolTip": "Lab01\\main.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-12T12:12:04.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-12T12:12:04.634Z"
             }
           ]
         }

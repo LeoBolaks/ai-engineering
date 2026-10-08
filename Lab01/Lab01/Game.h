@@ -26,6 +26,8 @@
 #include "Wander.h"
 #include "Arrive.h"
 #include "Pursue.h"
+#include "Flocking.h"
+#include "Swarming.h"
 
 const sf::Color NICE_BLUE{ 16, 122,176,255 }; // const colour
 
@@ -62,12 +64,7 @@ private:
 
 	std::vector<NPC*> allNPCs;
 
-	NPC npcList[5] = {
-	NPC { new Seek, 1, 300.0f, 1},
-	NPC { new Wander, 2, 150.0f, 2},
-	NPC { new Arrive, 3, 200.0f, 3},
-	NPC { new Arrive, 3, 150.0f, 4},
-	NPC { new Pursue, 4, 350.0f, 5} };
+	const int NUM_NPCS = 200;
 
 };
 

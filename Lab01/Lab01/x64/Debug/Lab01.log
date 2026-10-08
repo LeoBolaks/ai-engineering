@@ -1,3 +1,5 @@
-﻿  NPC.cpp
-C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\NPC.cpp(13,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+﻿  Game.cpp
+  main.cpp
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\main.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   Lab01.vcxproj -> C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\x64\Debug\Lab01.exe

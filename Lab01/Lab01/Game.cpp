@@ -106,26 +106,19 @@ void Game::processKeyPress(sf::Event::KeyPressed t_keyPress)
 	{
 		m_DELETEexitGame = true; // only need one of these, but this is an example of checking events rather than state
 	}
-
 	if (sf::Keyboard::Key::Num1 == t_keyPress.code)
 	{
-		npcList[0].toggleActive();
+		for (int i = 0; i < NUM_NPCS; i++)
+		{
+			allNPCs[i]->changeBehaviour(new Flocking);
+		}
 	}
 	if (sf::Keyboard::Key::Num2 == t_keyPress.code)
 	{
-		npcList[1].toggleActive();
-	}
-	if (sf::Keyboard::Key::Num3 == t_keyPress.code)
-	{
-		npcList[2].toggleActive();
-	}
-	if (sf::Keyboard::Key::Num4 == t_keyPress.code)
-	{
-		npcList[3].toggleActive();
-	}
-	if (sf::Keyboard::Key::Num5 == t_keyPress.code)
-	{
-		npcList[4].toggleActive();
+		for (int i = 0; i < NUM_NPCS; i++)
+		{
+			allNPCs[i]->changeBehaviour(new Swarming);
+		}
 	}
 }
 
@@ -166,9 +159,9 @@ void Game::update(sf::Time t_deltaTime)
 	checkKeyboardState();
 	checkMouseState();
 	player.update(t_deltaTime);
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < NUM_NPCS; i++)
 	{
-		npcList[i].update(t_deltaTime);
+		allNPCs[i]->update(t_deltaTime);
 	}
 	if (m_DELETEexitGame)
 	{
@@ -184,9 +177,9 @@ void Game::render()
 	m_window.clear(sf::Color::Black);
 	m_window.draw(yavinBackground);
 	player.draw(m_window);
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < NUM_NPCS; i++)
 	{
-		npcList[i].draw(m_window);
+		allNPCs[i]->draw(m_window);
 	}
 	m_window.display();
 }
@@ -222,14 +215,18 @@ void Game::setupSprites()
 
 void Game::setupNPCs()
 {
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < NUM_NPCS; i++)
 	{
-		npcList[i].setPlayer(&player);
-		allNPCs.push_back(&npcList[i]);
+		float randomSpeed = 150.0f + (rand() % 200);
+
+		NPC* newNPC = new NPC(new Swarming, 5, randomSpeed, i);
+		newNPC->setPlayer(&player);
+
+		allNPCs.push_back(newNPC);
 	}
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < NUM_NPCS; i++)
 	{
-		npcList[i].setupAvoidance(&allNPCs);
+		allNPCs[i]->setupAvoidance(&allNPCs);
 	}
 }
 

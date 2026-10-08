@@ -65,6 +65,12 @@
     <ClInclude Include="CollisionAvoidance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Flocking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Swarming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="ASSETS\IMAGES\SFML-LOGO.png">
