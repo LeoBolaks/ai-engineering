@@ -25,22 +25,13 @@
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <ClInclude Include="Arrive.h" />
-    <ClInclude Include="CollisionAvoidance.h" />
     <ClInclude Include="Flocking.h" />
->>>>>>> 67839069fd266493e7daae2c792a5266f822cda9
     <ClInclude Include="Game.h" />
     <ClInclude Include="NPC.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Seek.h" />
     <ClInclude Include="SteeringBehaviour.h" />
-<<<<<<< HEAD
-=======
     <ClInclude Include="Swarming.h" />
-    <ClInclude Include="Wander.h" />
->>>>>>> 67839069fd266493e7daae2c792a5266f822cda9
   </ItemGroup>
   <ItemGroup>
     <Image Include="ASSETS\IMAGES\SFML-LOGO.png">

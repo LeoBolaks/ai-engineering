@@ -9,7 +9,7 @@ void NPC::init()
 {
 	active = true;
 	scale = { 0.15f,0.15f };
-	position.x = 400.0f + (rand() % 400); 
+	position.x = 400.0f + (rand() % 400);
 	position.y = 200.0f + (rand() % 400);
 	randomNum = rand() % 360;
 

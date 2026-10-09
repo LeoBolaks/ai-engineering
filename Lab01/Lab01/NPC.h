@@ -53,6 +53,6 @@ private:
 	Player* playerTarget{ nullptr };
 
 	sf::Font nameFont;
-	sf::Text nameText{nameFont};
+	sf::Text nameText{ nameFont };
 	sf::Vector2f textOffset{ -30.0f, 70.0f };
 };
