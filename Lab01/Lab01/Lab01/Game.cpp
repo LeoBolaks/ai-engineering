@@ -23,6 +23,7 @@ Game::Game() :
 {
 	setupTexts(); // load font 
 	setupSprites(); // load texture
+	setupNPCs();
 	setupAudio(); // load sound
 }
 
@@ -105,6 +106,27 @@ void Game::processKeyPress(sf::Event::KeyPressed t_keyPress)
 	{
 		m_DELETEexitGame = true; // only need one of these, but this is an example of checking events rather than state
 	}
+
+	if (sf::Keyboard::Key::Num1 == t_keyPress.code)
+	{
+		npcList[0].toggleActive();
+	}
+	if (sf::Keyboard::Key::Num2 == t_keyPress.code)
+	{
+		npcList[1].toggleActive();
+	}
+	if (sf::Keyboard::Key::Num3 == t_keyPress.code)
+	{
+		npcList[2].toggleActive();
+	}
+	if (sf::Keyboard::Key::Num4 == t_keyPress.code)
+	{
+		npcList[3].toggleActive();
+	}
+	if (sf::Keyboard::Key::Num5 == t_keyPress.code)
+	{
+		npcList[4].toggleActive();
+	}
 }
 
 /// <summary>
@@ -143,9 +165,11 @@ void Game::update(sf::Time t_deltaTime)
 {
 	checkKeyboardState();
 	checkMouseState();
-	player.update();
-	npc.update();
-	npc2.update();
+	player.update(t_deltaTime);
+	for (int i = 0; i < 5; i++)
+	{
+		npcList[i].update(t_deltaTime);
+	}
 	if (m_DELETEexitGame)
 	{
 		m_window.close();
@@ -160,8 +184,10 @@ void Game::render()
 	m_window.clear(sf::Color::Black);
 	m_window.draw(yavinBackground);
 	player.draw(m_window);
-	npc.draw(m_window);
-	npc2.draw(m_window);
+	for (int i = 0; i < 5; i++)
+	{
+		npcList[i].draw(m_window);
+	}
 	m_window.display();
 }
 
@@ -192,6 +218,19 @@ void Game::setupSprites()
 	}
 	yavinBackground.setTexture(yavinTexture, true);
 	yavinBackground.setPosition({ 0.0f,0.0f });
+}
+
+void Game::setupNPCs()
+{
+	for (int i = 0; i < 5; i++)
+	{
+		npcList[i].setPlayer(&player);
+		allNPCs.push_back(&npcList[i]);
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		npcList[i].setupAvoidance(&allNPCs);
+	}
 }
 
 /// <summary>

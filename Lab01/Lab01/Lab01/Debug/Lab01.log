@@ -1,49 +1,127 @@
-﻿Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::setPosition(class sf::Vector2<float>)" (__imp_?setPosition@Transformable@sf@@QAEXV?$Vector2@M@2@@Z) referenced in function "private: void __thiscall Game::processMousePress(struct sf::Event::MouseButtonPressed)" (?processMousePress@Game@@AAEXUMouseButtonPressed@Event@sf@@@Z)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Transformable::move(class sf::Vector2<float>)" (__imp_?move@Transformable@sf@@QAEXV?$Vector2@M@2@@Z) referenced in function "private: void __thiscall Game::checkMouseState(void)" (?checkMouseState@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::Texture(void)" (__imp_??0Texture@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Texture::~Texture(void)" (__imp_??1Texture@sf@@QAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$7
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Texture::loadFromFile(class std::filesystem::path const &,bool,class sf::Rect<int> const &)" (__imp_?loadFromFile@Texture@sf@@QAE_NABVpath@filesystem@std@@_NABV?$Rect@H@2@@Z) referenced in function "private: void __thiscall Game::setupSprites(void)" (?setupSprites@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::Font(void)" (__imp_??0Font@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Font::openFromFile(class std::filesystem::path const &)" (__imp_?openFromFile@Font@sf@@QAE_NABVpath@filesystem@std@@@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Font::~Font(void)" (__imp_??1Font@sf@@QAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$3
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color)" (__imp_?clear@RenderTarget@sf@@QAEXVColor@2@@Z) referenced in function "private: void __thiscall Game::render(void)" (?render@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::draw(class sf::Drawable const &,struct sf::RenderStates const &)" (__imp_?draw@RenderTarget@sf@@QAEXABVDrawable@2@ABURenderStates@2@@Z) referenced in function "private: void __thiscall Game::render(void)" (?render@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(class sf::Vector2<unsigned int>,unsigned int)" (__imp_??0VideoMode@sf@@QAE@V?$Vector2@I@1@I@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::WindowBase::isOpen(void)const " (__imp_?isOpen@WindowBase@sf@@QBE_NXZ) referenced in function "public: void __thiscall Game::run(void)" (?run@Game@@QAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class std::optional<class sf::Event> __thiscall sf::WindowBase::pollEvent(void)" (__imp_?pollEvent@WindowBase@sf@@QAE?AV?$optional@VEvent@sf@@@std@@XZ) referenced in function "private: void __thiscall Game::processEvents(void)" (?processEvents@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (__imp_?isKeyPressed@Keyboard@sf@@YA_NW4Key@12@@Z) referenced in function "private: void __thiscall Game::checkKeyboardState(void)" (?checkKeyboardState@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) class sf::Vector2<int> __cdecl sf::Mouse::getPosition(class sf::WindowBase const &)" (__imp_?getPosition@Mouse@sf@@YA?AV?$Vector2@H@2@ABVWindowBase@2@@Z) referenced in function "private: void __thiscall Game::checkMouseState(void)" (?checkMouseState@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QAE?AVTime@2@XZ) referenced in function "public: void __thiscall Game::run(void)" (?run@Game@@QAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ) referenced in function "public: void __thiscall Game::run(void)" (?run@Game@@QAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ) referenced in function "private: void __thiscall Game::render(void)" (?render@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,enum sf::State,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IW4State@1@ABUContextSettings@1@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$2
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sprite::Sprite(class sf::Texture const &)" (__imp_??0Sprite@sf@@QAE@ABVTexture@1@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Sprite::setTexture(class sf::Texture const &,bool)" (__imp_?setTexture@Sprite@sf@@QAEXABVTexture@2@_N@Z) referenced in function "private: void __thiscall Game::setupSprites(void)" (?setupSprites@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Rect<float> __thiscall sf::Sprite::getGlobalBounds(void)const " (__imp_?getGlobalBounds@Sprite@sf@@QBE?AV?$Rect@M@2@XZ) referenced in function "private: void __thiscall Game::checkMouseState(void)" (?checkMouseState@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sprite::~Sprite(void)" (__imp_??1Sprite@sf@@UAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$8
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Text::Text(class sf::Font const &,class sf::String,unsigned int)" (__imp_??0Text@sf@@QAE@ABVFont@1@VString@1@I@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setString(class sf::String const &)" (__imp_?setString@Text@sf@@QAEXABVString@2@@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFont(class sf::Font const &)" (__imp_?setFont@Text@sf@@QAEXABVFont@2@@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setCharacterSize(unsigned int)" (__imp_?setCharacterSize@Text@sf@@QAEXI@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setFillColor(class sf::Color)" (__imp_?setFillColor@Text@sf@@QAEXVColor@2@@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setOutlineColor(class sf::Color)" (__imp_?setOutlineColor@Text@sf@@QAEXVColor@2@@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Text::setOutlineThickness(float)" (__imp_?setOutlineThickness@Text@sf@@QAEXM@Z) referenced in function "private: void __thiscall Game::setupTexts(void)" (?setupTexts@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Text::~Text(void)" (__imp_??1Text@sf@@UAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$6
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Sound::Sound(class sf::SoundBuffer const &)" (__imp_??0Sound@sf@@QAE@ABVSoundBuffer@1@@Z) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::Sound::~Sound(void)" (__imp_??1Sound@sf@@UAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$10
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::SoundBuffer(void)" (__imp_??0SoundBuffer@sf@@QAE@XZ) referenced in function "public: __thiscall Game::Game(void)" (??0Game@@QAE@XZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::SoundBuffer::~SoundBuffer(void)" (__imp_??1SoundBuffer@sf@@QAE@XZ) referenced in function __unwindfunclet$??0Game@@QAE@XZ$9
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::SoundBuffer::loadFromFile(class std::filesystem::path const &)" (__imp_?loadFromFile@SoundBuffer@sf@@QAE_NABVpath@filesystem@std@@@Z) referenced in function "private: void __thiscall Game::setupAudio(void)" (?setupAudio@Game@@AAEXXZ)
-Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static struct sf::RenderStates const sf::RenderStates::Default" (__imp_?Default@RenderStates@sf@@2U12@B) referenced in function "private: void __thiscall Game::render(void)" (?render@Game@@AAEXXZ)
-C:\SFML-3.1.0\lib\sfml-graphics.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-window.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-system.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-graphics-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-audio-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-system-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-window-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\SFML-3.1.0\lib\sfml-network-d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\Users\gameuser\Desktop\AI For Games\Lab01\Lab01\Debug\Lab01.exe : fatal error LNK1120: 40 unresolved externals
+﻿  Game.cpp
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,6): error C2039: 'Angle': is not a member of 'sf'
+  (compiling source file 'Game.cpp')
+      C:\SFML-2.6.1\include\SFML\Audio\SoundFileWriter.hpp(35,11):
+      see declaration of 'sf'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,12): error C3646: 'rotation': unknown override specifier
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.h(36,34): error C2061: syntax error: identifier 'KeyPressed'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.h(37,36): error C2061: syntax error: identifier 'MouseButtonPressed'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,25): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'sf::VideoMode'
+      C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,25):
+      'sf::VideoMode::VideoMode': no overloaded function could convert all the argument types
+          C:\SFML-2.6.1\include\SFML\Window\VideoMode.hpp(61,5):
+          could be 'sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)'
+              C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,25):
+              'sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)': cannot convert argument 1 from 'sf::Vector2u' to 'unsigned int'
+                  C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,39):
+                  No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+          C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,25):
+          while trying to match the argument list '(sf::Vector2u, unsigned int)'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,10): error C2665: 'sf::RenderWindow::RenderWindow': no overloaded function could convert all the argument types
+      C:\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(198,1):
+      could be 'sf::RenderWindow::RenderWindow(const sf::RenderWindow &)'
+          C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,10):
+          'sf::RenderWindow::RenderWindow(const sf::RenderWindow &)': cannot convert argument 1 from 'const char [14]' to 'const sf::RenderWindow &'
+              C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,61):
+              Reason: cannot convert from 'const char [14]' to 'const sf::RenderWindow'
+      C:\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(94,5):
+      or       'sf::RenderWindow::RenderWindow(sf::WindowHandle,const sf::ContextSettings &)'
+          C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,10):
+          'sf::RenderWindow::RenderWindow(sf::WindowHandle,const sf::ContextSettings &)': cannot convert argument 1 from 'const char [14]' to 'sf::WindowHandle'
+              C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,61):
+              Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+      C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(21,10):
+      while trying to match the argument list '(const char [14])'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,15): error C2039: 'optional': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\iostream(19,1):
+      see declaration of 'std'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,15): error C2065: 'optional': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,24): error C2146: syntax error: missing ')' before identifier 'newEvent'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,24): error C2065: 'newEvent': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,44): error C2660: 'sf::WindowBase::pollEvent': function does not take 0 arguments
+      C:\SFML-2.6.1\include\SFML\Window\WindowBase.hpp(170,10):
+      see declaration of 'sf::WindowBase::pollEvent'
+      C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,44):
+      while trying to match the argument list '()'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(71,55): error C2059: syntax error: ')'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(73,3): error C2059: syntax error: 'if'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(74,3): error C2143: syntax error: missing ';' before '{'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(77,7): error C2065: 'newEvent': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(77,43): error C2059: syntax error: ')'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(78,3): error C2143: syntax error: missing ';' before '{'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(79,26): error C2146: syntax error: missing ';' before identifier 'newKeypress'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(79,26): error C2065: 'newKeypress': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(80,4): error C2065: 'newKeypress': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(80,19): error C2065: 'newEvent': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(80,58): error C2059: syntax error: ')'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(81,20): error C2065: 'newKeypress': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(83,7): error C2065: 'newEvent': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(83,53): error C2059: syntax error: ')'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(84,3): error C2143: syntax error: missing ';' before '{'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(85,34): error C2146: syntax error: missing ';' before identifier 'newMousePress'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(85,34): error C2065: 'newMousePress': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(86,4): error C2065: 'newMousePress': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(86,21): error C2065: 'newEvent': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(86,68): error C2059: syntax error: ')'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(87,22): error C2065: 'newMousePress': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(96,1): error C2059: syntax error: '}'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(96,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(104,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(104,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(115,60): error C2146: syntax error: missing ')' before identifier 't_mousePress'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(116,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.cpp(116,1): error C2447: '{': missing function header (old-style formal list?)
+  main.cpp
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,6): error C2039: 'Angle': is not a member of 'sf'
+  (compiling source file 'main.cpp')
+      C:\SFML-2.6.1\include\SFML\Audio\SoundFileWriter.hpp(35,11):
+      see declaration of 'sf'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,12): error C3646: 'rotation': unknown override specifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.h(36,34): error C2061: syntax error: identifier 'KeyPressed'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Game.h(37,36): error C2061: syntax error: identifier 'MouseButtonPressed'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\main.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Player.cpp
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,6): error C2039: 'Angle': is not a member of 'sf'
+  (compiling source file 'Player.cpp')
+      C:\SFML-2.6.1\include\SFML\Graphics\VertexBuffer.hpp(37,11):
+      see declaration of 'sf'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,12): error C3646: 'rotation': unknown override specifier
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.h(24,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Player.cpp')
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.cpp(12,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.cpp(13,2): error C2065: 'rotation': undeclared identifier
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.cpp(13,17): error C2039: 'degrees': is not a member of 'sf'
+      C:\SFML-2.6.1\include\SFML\Graphics\VertexBuffer.hpp(37,11):
+      see declaration of 'sf'
+  
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.cpp(13,17): error C3861: 'degrees': identifier not found
+C:\Users\Cosmo\OneDrive\Desktop\College\Year 4\ai-engineering\Lab01\Lab01\Player.cpp(25,20): error C2065: 'rotation': undeclared identifier
+  Generating Code...
