@@ -4,6 +4,10 @@
 #include <vector>
 #include <cmath>
 
+
+// Swarm becomes more cohesive and actually more "swarmlike" the more npcs there are, there is a lot more spread and the swarm moves around the screen slower if there is only 200 of them
+// however when that number is increased to 500 the swarm moves around the screen faster and is much more cohesive. Swarm does not function properly at all even if there is 100 NPCs once it is up to 200 
+// it becomes more visible
 class Swarming : public SteeringBehaviour
 {
 public:

@@ -4,6 +4,7 @@
 #include <vector>
 #include <cmath>
 
+// Works with any amount of NPCs they just need to find each other, once they enter each others radius they will average out their direction and begin flocking together.
 class Flocking : public SteeringBehaviour
 {
 public:
@@ -60,6 +61,6 @@ private:
 	NPC* character;
 	std::vector<NPC*>* targets;
 	float viewDistance = 200.0f;
-	float separationDistance = 80.0f;
-	float strength = 100.0f;
+	float separationDistance = 100.0f;
+	float strength = 250.0f;
 };

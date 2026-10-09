@@ -64,7 +64,7 @@ private:
 
 	std::vector<NPC*> allNPCs;
 
-	const int NUM_NPCS = 200;
+	const int NUM_NPCS = 300;
 
 };
 

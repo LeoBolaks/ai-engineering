@@ -1,7 +1,7 @@
 ﻿  Game.cpp
-  main.cpp
-C:\Users\gameuser\Desktop\AI For Games\Lab01\Lab01\Lab01\main.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   NPC.cpp
 C:\Users\gameuser\Desktop\AI For Games\Lab01\Lab01\Lab01\NPC.cpp(14,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+C:\Users\gameuser\Desktop\AI For Games\Lab01\Lab01\Lab01\main.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
   Lab01.vcxproj -> C:\Users\gameuser\Desktop\AI For Games\Lab01\Lab01\x64\Debug\Lab01.exe

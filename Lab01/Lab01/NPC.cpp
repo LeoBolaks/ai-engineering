@@ -33,44 +33,82 @@ void NPC::init()
 		std::cout << "Problem loading font" << std::endl;
 	}
 	nameText.setFont(nameFont);
-	nameText.setCharacterSize(20);
+	nameText.setCharacterSize(10);
 	nameText.setFillColor(sf::Color::White);
 	nameText.setPosition(position - textOffset);
 
-	//switch (behaviourType)
-	//{
-	//case 1:
-	//{
-	//	nameText.setString("Seeking");
-	//	break;
-	//}
-	//case 2:
-	//{
-	//	nameText.setString("Wandering");
-	//	break;
-	//}
-	//case 3:
-	//{
-	//	nameText.setString("Arriving");
-	//	break;
-	//}
-	//case 4:
-	//{
-	//	nameText.setString("Pursuing");
-	//	break;
-	//}
-	//case 5:
-	//{
-	//	nameText.setString("Flocking");
-	//	break;
-	//}
-	//}
+	switch (behaviourType)
+	{
+	case 1:
+	{
+		nameText.setString("Seeking");
+		break;
+	}
+	case 2:
+	{
+		nameText.setString("Wandering");
+		break;
+	}
+	case 3:
+	{
+		nameText.setString("Arriving");
+		break;
+	}
+	case 4:
+	{
+		nameText.setString("Pursuing");
+		break;
+	}
+	case 5:
+	{
+		nameText.setString("Flocking");
+		break;
+	}
+	case 6:
+	{
+		nameText.setString("Swarming");
+		break;
+	}
+	}
 
 	std::cout << "Tie Rotation: " << randomNum << std::endl;
 }
 
 void NPC::update(sf::Time t_deltaTime)
 {
+	switch (behaviourType)
+	{
+	case 1:
+	{
+		nameText.setString("Seeking");
+		break;
+	}
+	case 2:
+	{
+		nameText.setString("Wandering");
+		break;
+	}
+	case 3:
+	{
+		nameText.setString("Arriving");
+		break;
+	}
+	case 4:
+	{
+		nameText.setString("Pursuing");
+		break;
+	}
+	case 5:
+	{
+		nameText.setString("Flocking");
+		break;
+	}
+	case 6:
+	{
+		nameText.setString("Swarming");
+		break;
+	}
+	}
 
 	if (active)
 	{
@@ -152,8 +190,9 @@ void NPC::setRotationInDir()
 	tie.setRotation(rotation);
 }
 
-void NPC::changeBehaviour(SteeringBehaviour* t_behaviour)
+void NPC::changeBehaviour(SteeringBehaviour* t_behaviour, int t_id)
 {
+	behaviourType = t_id;
 	behaviour = t_behaviour;
 
 	if (behaviour != nullptr)
@@ -189,5 +228,5 @@ bool NPC::checkIfInsideVisionCone(sf::Vector2f t_targetPos)
 void NPC::draw(sf::RenderWindow& t_window)
 {
 	t_window.draw(tie);
-	//t_window.draw(nameText);
+	t_window.draw(nameText);
 }

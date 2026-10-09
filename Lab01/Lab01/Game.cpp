@@ -106,18 +106,18 @@ void Game::processKeyPress(sf::Event::KeyPressed t_keyPress)
 	{
 		m_DELETEexitGame = true; // only need one of these, but this is an example of checking events rather than state
 	}
-	if (sf::Keyboard::Key::Num1 == t_keyPress.code)
+	if (sf::Keyboard::Key::F == t_keyPress.code)
 	{
 		for (int i = 0; i < NUM_NPCS; i++)
 		{
-			allNPCs[i]->changeBehaviour(new Flocking);
+			allNPCs[i]->changeBehaviour(new Flocking, 5);
 		}
 	}
-	if (sf::Keyboard::Key::Num2 == t_keyPress.code)
+	if (sf::Keyboard::Key::S == t_keyPress.code)
 	{
 		for (int i = 0; i < NUM_NPCS; i++)
 		{
-			allNPCs[i]->changeBehaviour(new Swarming);
+			allNPCs[i]->changeBehaviour(new Swarming, 6);
 		}
 	}
 }
@@ -219,7 +219,7 @@ void Game::setupNPCs()
 	{
 		float randomSpeed = 150.0f + (rand() % 200);
 
-		NPC* newNPC = new NPC(new Swarming, 5, randomSpeed, i);
+		NPC* newNPC = new NPC(new Swarming, 6, randomSpeed, i);
 		newNPC->setPlayer(&player);
 
 		allNPCs.push_back(newNPC);

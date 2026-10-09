@@ -22,7 +22,7 @@ public:
 
 	void toggleActive() { active = !active; }
 
-	void changeBehaviour(SteeringBehaviour* t_behaviour);
+	void changeBehaviour(SteeringBehaviour* t_behaviour, int t_id);
 
 	sf::Vector2f getPosition() { return position; }
 	sf::Vector2f getVelocity() { return velocity; }
