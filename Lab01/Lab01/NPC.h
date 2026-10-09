@@ -22,6 +22,8 @@ public:
 
 	void toggleActive() { active = !active; }
 
+	void changeBehaviour(SteeringBehaviour* t_behaviour);
+
 	sf::Vector2f getPosition() { return position; }
 	sf::Vector2f getVelocity() { return velocity; }
 
@@ -43,6 +45,8 @@ private:
 	int behaviourType;
 
 	bool active;
+
+	std::vector<NPC*>* npcList;
 
 	SteeringBehaviour* behaviour{ nullptr };
 	SteeringBehaviour* avoidBehaviour{ nullptr };

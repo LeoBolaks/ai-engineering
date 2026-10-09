@@ -3,6 +3,9 @@
 #include "SFML/Graphics.hpp"
 
 #include <iostream>
+
+class NPC;
+
 struct steeringOutput
 {
 	sf::Vector2f linear;
@@ -14,6 +17,8 @@ public:
 	SteeringBehaviour() = default;
 	virtual ~SteeringBehaviour() {};
 	virtual steeringOutput getSteering(sf::Vector2f t_me, sf::Vector2f t_target, sf::Vector2f t_velocity, sf::Vector2f t_targetVelocity, float t_maxAcceleration) = 0;
+
+	virtual void setParameters(NPC* t_me, std::vector<NPC*>* t_npcList) {}
 
 protected:
 	steeringOutput steering;
