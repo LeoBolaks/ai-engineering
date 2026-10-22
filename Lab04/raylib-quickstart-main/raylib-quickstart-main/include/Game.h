@@ -2,7 +2,9 @@
 
 #include <iostream>
 #include <vector>
-#include "Raylib.h"
+#include <queue>
+#include "raylib.h"
+#include "raymath.h"
 
 struct Grid
 {
@@ -24,10 +26,52 @@ class Game
 public:
 	Game();
 
+	void makeCostField();
+
+	void makeHeatMap();
+
+	void makeIntegrationField();
+
+	void makeVectorField();
+
+	void generatePath();
+
 	void update();
+
+	void resetGrid();
 
 	void draw();
 
 private:
+	bool mouseInsideGrid;
+
 	Grid mainGrid;
+	Vector2 mousePos;
+	int mouseCellIndex;
+	int startIndex;
+	int goalIndex;
+	std::queue<int> costFieldQueue;
+	bool costFieldGenerated;
+	bool heuristicsGenerated;
+	bool pathGenerated;
+
+	float maxCost;
+
+	std::vector<int> algorithmPath;
+
+	// Directions On The Grid
+	int upLeft;
+	int up;
+	int upRight;
+
+	int downLeft;
+	int down;
+	int downRight;
+
+	int left;
+	int right;
+
+	bool viewCosts;
+	bool viewHeuristics;
+	bool viewDirections;
 };
