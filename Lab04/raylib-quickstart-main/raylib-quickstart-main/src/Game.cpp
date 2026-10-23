@@ -183,7 +183,7 @@ void Game::makeIntegrationField()
 
 			float distance = Vector2Distance({ currentX, currentY }, { gX, gY });
 
-			mainGrid.heuristics[i] = mainGrid.costs[i] + distance;
+			mainGrid.heuristics[i] = mainGrid.costs[i] + (distance * 0.5f);
 		}
 	}
 	makeVectorField();
@@ -303,11 +303,13 @@ void Game::makeVectorField()
 
 void Game::generatePath()
 {
+	int maxStep = 1000;
+	int counter = 0;
 	algorithmPath.clear();
 
 	int currentIndex = startIndex;
 
-	while (currentIndex != goalIndex)
+	while (currentIndex != goalIndex && counter < maxStep)
 	{
 		algorithmPath.push_back(currentIndex);
 
@@ -320,6 +322,7 @@ void Game::generatePath()
 		}
 
 		currentIndex = currentIndex + (stepY * mainGrid.getGridSize()) + stepX;
+		counter++;
 	}
 	pathGenerated = true;
 }
@@ -342,7 +345,7 @@ void Game::update()
 	{
 		makeCostField();
 	}
-	if (goalIndex > -1 && startIndex > -1 && costFieldGenerated)
+	if (goalIndex > -1 && costFieldGenerated)
 	{
 		makeIntegrationField();
 	}

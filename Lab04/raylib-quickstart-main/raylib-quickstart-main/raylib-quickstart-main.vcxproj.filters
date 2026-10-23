@@ -18,7 +18,7 @@
     <ClInclude Include="src\resource_dir.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Game.h">
+    <ClInclude Include="src\include\Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
