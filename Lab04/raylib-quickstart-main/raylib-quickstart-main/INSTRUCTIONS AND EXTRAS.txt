@@ -1,0 +1,7 @@
+Upon downloading/cloning the project, it should work right off the bat because the filters and raylib files should have been pushed with it.
+If it does not, then run the build-VisualStudio2026.bat file which should create the filters and check the raylib files
+
+EXTRAS:
+NPC added.
+Upon creation the npc gets the array of directions as a pointer so it gets passed in once and the npc always has access to it even if it changes.
+the npcs gets its position using the same maths used to get the grid the mouse is over, the npcs position x and y is divided separately by the cell size, and then those x and y values are passed into a function which gets the index, once the index is received, the update loop then constantly assigns the direction from the pointer array of directions using directions[index] so it will get the current cell its on, get the direction, and assign it to a local variable from where the position is offset by the direction * speed.

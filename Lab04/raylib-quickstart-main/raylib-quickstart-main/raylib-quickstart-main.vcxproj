@@ -302,11 +302,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\include\Game.h" />
+    <ClInclude Include="src\include\NPC.h" />
     <ClInclude Include="src\resource_dir.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\NPC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\icon.ico" />

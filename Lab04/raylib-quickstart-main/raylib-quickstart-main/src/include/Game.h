@@ -5,6 +5,7 @@
 #include <queue>
 #include "raylib.h"
 #include "raymath.h"
+#include "NPC.h"
 
 struct Grid
 {
@@ -53,6 +54,7 @@ private:
 	std::queue<int> costFieldQueue;
 	bool costFieldGenerated;
 	bool heuristicsGenerated;
+	bool flowFieldGenerated;
 	bool pathGenerated;
 
 	float maxCost;
@@ -74,4 +76,6 @@ private:
 	bool viewCosts;
 	bool viewHeuristics;
 	bool viewDirections;
+
+	NPC npc;
 };

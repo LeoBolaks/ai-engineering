@@ -4,6 +4,7 @@ Game::Game()
 {
 	costFieldGenerated = false;
 	heuristicsGenerated = false;
+	flowFieldGenerated = false;
 	pathGenerated = false;
 	startIndex = -1;
 	goalIndex = -1;
@@ -33,17 +34,20 @@ Game::Game()
 			mainGrid.positions[i].x = (x * mainGrid.cellSize);
 			mainGrid.positions[i].y = (y * mainGrid.cellSize);
 
-			mainGrid.colours[i] = Color(0, 155, 185, 255);
+			mainGrid.colours[i] = Color{ 60, 60, 255, 255 };
 			mainGrid.costs[i] = -1;
 			mainGrid.indexes[i] = i;
+			mainGrid.directions[i] = { 0,0 };
 		}
 	}
+	npc.setDirections(mainGrid.directions, mainGrid.getGridSize() * mainGrid.getGridSize());
 }
 
 void Game::makeCostField()
 {
 	maxCost = 0.0f;
 	heuristicsGenerated = false;
+	flowFieldGenerated = false;
 	pathGenerated = false;
 	costFieldQueue.push(goalIndex);
 	mainGrid.costs[goalIndex] = 0;
@@ -152,8 +156,8 @@ void Game::makeHeatMap()
 		Color lightBlue = { 60, 60, 255, 255 }; 
 		Color darkBlue = { 0, 0, 40, 255 };   
 
-		mainGrid.colours[i].r = lightBlue.r + (darkBlue.r - lightBlue.r) * ratio;
-		mainGrid.colours[i].g = lightBlue.g + (darkBlue.g - lightBlue.g) * ratio;
+		mainGrid.colours[i].r = 0;
+		mainGrid.colours[i].g = 0;
 		mainGrid.colours[i].b = lightBlue.b + (darkBlue.b - lightBlue.b) * ratio;
 		mainGrid.colours[i].a = 255;
 	}
@@ -299,6 +303,7 @@ void Game::makeVectorField()
 			mainGrid.directions[i] = Vector2Normalize(direction);
 		}
 	}
+	flowFieldGenerated = true;
 }
 
 void Game::generatePath()
@@ -329,6 +334,9 @@ void Game::generatePath()
 
 void Game::update()
 {
+
+	npc.update();
+	npc.setFlowFlag(flowFieldGenerated);
 	if (IsKeyPressed(KEY_C))
 	{
 		viewCosts = !viewCosts;
@@ -375,6 +383,7 @@ void Game::update()
 			pathGenerated = false;
 		}
 		startIndex = mouseCellIndex;
+		npc.setPosition({ mainGrid.positions[startIndex].x + (mainGrid.cellSize / 2), mainGrid.positions[startIndex].y});
 	}
 	if (mouseInsideGrid && IsMouseButtonPressed(MouseButton::MOUSE_BUTTON_RIGHT) && mainGrid.costs[mouseCellIndex] != 999 && mouseCellIndex != startIndex)
 	{
@@ -385,7 +394,16 @@ void Game::update()
 		}
 		goalIndex = mouseCellIndex;
 	}
-	if (mouseInsideGrid && IsMouseButtonPressed(MouseButton::MOUSE_BUTTON_MIDDLE))
+	if (mouseInsideGrid && IsMouseButtonDown(MouseButton::MOUSE_BUTTON_MIDDLE))
+	{
+		mainGrid.costs[mouseCellIndex] = 999;
+		if (costFieldGenerated)
+		{
+			resetGrid();
+			costFieldGenerated = false;
+		}
+	}
+	if (mouseInsideGrid && IsMouseButtonDown(MouseButton::MOUSE_BUTTON_MIDDLE) && IsKeyDown(KEY_LEFT_SHIFT))
 	{
 		if (mainGrid.costs[mouseCellIndex] == 999)
 		{
@@ -396,12 +414,6 @@ void Game::update()
 				costFieldGenerated = false;
 			}
 			return;
-		}
-		mainGrid.costs[mouseCellIndex] = 999;
-		if (costFieldGenerated)
-		{
-			resetGrid();
-			costFieldGenerated = false;
 		}
 	}
 
@@ -468,4 +480,6 @@ void Game::draw()
 		DrawRectangle(mainGrid.positions[goalIndex].x, mainGrid.positions[goalIndex].y, mainGrid.cellSize, mainGrid.cellSize, RED);
 	}
 	DrawRectangle(mainGrid.positions[mouseCellIndex].x, mainGrid.positions[mouseCellIndex].y, mainGrid.cellSize, mainGrid.cellSize, YELLOW);
+
+	npc.draw();
 }
